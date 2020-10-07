@@ -6,8 +6,17 @@
         li {
             list-style: none;
         }
-        
-        
+
+        ::selection {
+            color: white;
+            background: black;
+        }
+          
+          .mega:hover {
+              transform: scale(1.3);
+              box-shadow :rgba(0, 0, 0, 0.75);
+              cursor : pointer;
+          }
 
         .KamenRaider {
             transition: text-weight 5ms ease;
@@ -39,15 +48,22 @@
             box-shadow: 15px 14px 5px 0px rgba(0, 0, 0, 0.75);
             display: flex;
             flex-direction: column;
-            width: 250px;
+            width: 150px;
+            height: 300px;
             margin: 20px;
-            padding: 20px;
+            flex-wrap: nowrap;
             font-style: italic;
             color: white;
             text-shadow: 1px 1px black;
             transition: transform 200ms ease;
         }
 
+        .CartilhaItems {
+            padding: 0px;
+            display: flex;
+
+
+        }
 
 
 
@@ -80,13 +96,14 @@
         }
 
 
-        aside {
+        .mega {
             float: right;
             width: 30%;
             background-color: aqua;
             font-style: italic;
             color: white;
-            text-shadow: 1px 1px black
+            text-shadow: 1px 1px black;
+            transition: transform 200ms ease;
         }
 
         h2 {
@@ -102,7 +119,7 @@
 
 
 
-        [title = "Topzera"] {
+        [title="Topzera"] {
 
             border-radius: 50%;
             background-color: transparent;
@@ -130,7 +147,7 @@
 
 
 
-<img title = "Topzera" src="TopMega.png" alt="Foto">
+<img title="Topzera" src="TopMega.png" alt="Foto">
 <h1 id="Titulos">Juan Garcia De Lima</H1>
 
 
@@ -147,13 +164,12 @@
         <p> Eu sei que meu nome pode ser um pouco estranho, mas eu sou Legal,não precisa ficar com medo</p>
         <section>
             <p>Pra quem quiser saber, eu nasci em Alvorada, "cria" de lá, desde <ins>Piá</ins></p>
-            </aside>
             <p>Pra quem quiser saber, meu telefone e email, colocarei logo abaixo, com todas as minhas redes sociais</p>
         </section>
         <section>
             <p>Bom, com esse curso da Tecno-Start, planejo alcançar voos ainda maiores
                 e conseguir conquistar o meu sonho de ser um profissional de sucesso</p>
-            <aside>
+            <aside class = "mega">
                 <li>Nasci em 19 de Agosto</li>
                 <li>Sou Leonino</li>
                 <li> Adepto da Carne e dos <ins>GAMES</ins></li>
@@ -216,34 +232,40 @@
         </ul>
         <h3 class="ABC">Projetos Top</h3>
         <ul class="SupaMan">
-
             <li class="Cartilha">
+                <img src="gamemaker.png">
                 <h4>GMS</h4>
                 <p>Curriculo virtual em HTML, feito a mão por mim, em CSS</p>
             </li>
             <li class="Cartilha">
+                <img src="html2.png" width="512px" height="135px">
                 <h4>HTML</h4>
                 <p>Jogo desenvolvido no Game Maker </p>
             </li>
             <li class="Cartilha">
+                <img src="Filmes.png">
                 <h4>Filmes</h4>
                 <p>Escrevi um filme pra Tarantino</p>
             </li>
             <li class="Cartilha">
+                <img src="ps.png">
                 <h4>Games</h4>
                 <p>Desenvolvi Crash 7 pra PS15</p>
             </li>
             <li class="Cartilha">
+                <img src="pearson.png">
                 <h4>Livros</h4>
 
                 <p>Escrevi "A cúpula é das estrelas"</p>
             </li>
 
             <li class="Cartilha">
+                <img src="universal2.png">
                 <h4>Músicas</h4>
                 <p>Escrevi Músicas pra 50 Cent</p>
             </li>
         </ul>
+    </div>
     </div>
     <footer class="KamenRaider">Obrigado por ter visto meu currículo, até a próxima</footer>
 
